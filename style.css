@@ -1,0 +1,121 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffcc00;
+}
+
+/* Anime List Container */
+#anime-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Individual Anime Item */
+.anime-item {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    border: 2px solid #2c3e50;
+}
+
+/* Hover Effect for Anime Item */
+.anime-item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 2px solid;
+    border-image-source: linear-gradient(to right, red, #ffd700, #ffff00);
+    border-image-slice: 1;
+    border-radius: 8px;
+}
+
+/* Anime Character Container */
+#character-container {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+/* Anime Characters */
+.anime-character {
+    width: 150px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.anime-character:hover {
+    transform: scale(1.1);
+}
+
+/* Left Character (Gojo) */
+.anime-character.left {
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+}
+
+/* Right Character (Jinwoo) */
+.anime-character.right {
+    position: absolute;
+    left: 45%;
+    bottom: 20px;
+}
+
+/* Character Images */
+.anime-character img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Character Dialogue */
+.char-dialogue {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+/* Click Animation for the Character */
+.anime-character:active {
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
